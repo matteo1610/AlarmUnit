@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "author": "MATTEO CARDELLINI",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-nano", "id": "nano", "top": 35.48, "left": -37.89, "attrs": {} },
+    {
+      "type": "wokwi-pir-motion-sensor",
+      "id": "pir1",
+      "top": -142.4,
+      "left": -142.46,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pir-motion-sensor",
+      "id": "pir2",
+      "top": -142.53,
+      "left": -45.12,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pir-motion-sensor",
+      "id": "pir3",
+      "top": -142.53,
+      "left": 52.88,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pir-motion-sensor",
+      "id": "pir4",
+      "top": -142.53,
+      "left": 149.75,
+      "attrs": {}
+    },
+    { "type": "wokwi-slide-switch", "id": "sw1", "top": 83.31, "left": 215.41, "attrs": {} },
+    { "type": "wokwi-slide-switch", "id": "sw2", "top": -20.32, "left": 212.05, "attrs": {} },
+    { "type": "wokwi-slide-switch", "id": "sw3", "top": 29.25, "left": 212.75, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 133.69,
+      "left": 197.96,
+      "attrs": { "volume": "1.0" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -61.99,
+      "left": -166.88,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 37.39,
+      "left": -167.85,
+      "attrs": { "color": "limegreen" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": -10.89,
+      "left": -168.93,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -15.1,
+      "left": -85.71,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -0.48,
+      "left": -87.46,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 16.49,
+      "left": -86.88,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 146.67,
+      "left": 6.03,
+      "attrs": { "color": "green" }
+    }
+  ],
+  "connections": [
+    [ "pir1:VCC", "nano:5V", "red", [ "v176.82", "h207.24" ] ],
+    [ "pir2:VCC", "nano:5V", "red", [ "v10.6", "h-96.88", "v166", "h193.75", "v-28.19" ] ],
+    [ "pir3:GND", "nano:GND.2", "black", [ "v18.6", "h-21.11" ] ],
+    [ "pir2:GND", "nano:GND.2", "black", [ "v19.26", "h76.89" ] ],
+    [ "pir1:GND", "nano:GND.2", "black", [ "v19.8", "h174.23" ] ],
+    [ "pir1:OUT", "nano:12", "blue", [ "v31.9", "h78.35" ] ],
+    [ "pir3:OUT", "nano:10", "blue", [ "v32.6", "h-97.79" ] ],
+    [ "pir4:VCC", "nano:5V", "red", [ "v176.6", "h-84.43" ] ],
+    [ "pir3:VCC", "nano:5V", "red", [ "v5.93", "h97.03", "v170.67", "h-98.18", "v-28.19" ] ],
+    [ "pir4:GND", "nano:GND.2", "black", [ "v19.26", "h-116.56" ] ],
+    [ "pir2:OUT", "nano:11", "blue", [ "h0.38", "v33.44", "h-9.77" ] ],
+    [ "pir4:OUT", "nano:9", "blue", [ "v32.31", "h-185.06" ] ],
+    [ "sw2:2", "nano:GND.1", "black", [ "v7.77", "h40.99", "v112.21", "h-161.76" ] ],
+    [ "sw3:2", "nano:GND.1", "black", [ "v12.82", "h39.87", "v57.59", "h-161.76", "v-35.78" ] ],
+    [ "sw1:2", "nano:GND.1", "black", [ "v16.35", "h-112.69" ] ],
+    [ "sw2:1", "nano:7", "orange", [ "v1.96", "h-188.74" ] ],
+    [ "sw3:1", "nano:6", "orange", [ "v9.86", "h-18.81", "v-56.89", "h-161.03" ] ],
+    [ "sw1:1", "nano:5", "orange", [ "v7.46", "h-21.47", "v-108.55", "h-151.43" ] ],
+    [ "led1:C", "nano:GND.1", "black", [ "v9.61", "h-21.46", "v144.29", "h293.63" ] ],
+    [ "led3:C", "nano:GND.1", "black", [ "v3.99", "h-19.41", "v98.81", "h34.81" ] ],
+    [ "led2:C", "nano:GND.1", "black", [ "v10.73", "h-20.49", "v43.79", "h40.42" ] ],
+    [ "bz1:1", "nano:GND.1", "black", [ "v2.12", "h-92.32" ] ],
+    [ "bz1:2", "nano:13", "green", [ "v8.3", "h-222.47" ] ],
+    [ "led1:A", "r1:1", "green", [ "v0" ] ],
+    [ "r1:2", "nano:4", "green", [ "v-0.06", "h83.84" ] ],
+    [ "led3:A", "r2:1", "green", [ "v3.83", "h18.98", "v-28.66" ] ],
+    [ "r2:2", "nano:3", "green", [ "v-0.06", "h56.94" ] ],
+    [ "led2:A", "r3:1", "green", [ "v9.35", "h29.02", "v-63.74" ] ],
+    [ "r3:2", "nano:2", "green", [ "v-0.07", "h47" ] ],
+    [ "btn1:1.r", "nano:RESET", "green", [ "v-0.11", "h10.4" ] ],
+    [ "btn1:2.r", "nano:GND.1", "black", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
