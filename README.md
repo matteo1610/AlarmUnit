@@ -14,9 +14,8 @@ A home alarm system implemented with an Arduino Nano microcontroller. The projec
 
 ## Simulation
 
-Project simulated on Wokwi:  
-🔗 [Open project](https://wokwi.com/projects/368249522804096001)
+Project simulated on Wokwi: [Open project](https://wokwi.com/projects/368249522804096001)
 
 ---
 
-📄 **For technical details and diagrams**, see the [project report (PDF)](./CardelliniMatteo%20-%20Centralina%20allarme%20(20230628).pdf) *(written in Italian)*.
+**For technical details and diagrams**, see the [project report (PDF)](./docs/Report.pdf) *(written in Italian)*.
